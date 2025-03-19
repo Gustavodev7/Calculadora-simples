@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples WEB 1.0</title>
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    <div class="calculator"> <!--Container principal da pag-->
+        <h1>Calculadora Simples</h1> <!--Titulo da pagina-->
+        <input type="number" id="num1" placeholder="Numero 1">  <!-- Campo de entrada para o primeiro número. O atributo "placeholder" mostra uma dica dentro do campo -->
+        <input type="number" id="num2" placeholder="Número 2"> <!--Entrada do numero 2-->
+ 
+
+        <div class="buttons">
+            <!--Container com os botoes das operacoes-->
+            <button data-op="add">+</button> <!--data op define qual operacao ele realiza-->
+            <button data-op="subtract">-</button>
+            <button data-op="multiply">x</button>
+            <button data-op="divide">÷</button>
+        </div>
+
+        <div id="result">Resultado:</div>
+    </div>
+
+    <script src="./src/script.js"></script>
+</body>
+</html>
